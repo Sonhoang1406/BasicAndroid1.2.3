@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/edtNumA"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:textSize="25sp"
+       android:hint="Number A: "
+       />
+    <EditText
+        android:id="@+id/edtNumB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtNumA"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"
+        android:hint="Number b: "
+        />
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtNumB"
+        android:layout_marginTop="20dp"
+        android:text="Calculate"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnCal"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
