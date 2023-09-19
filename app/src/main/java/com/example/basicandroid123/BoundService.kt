@@ -19,4 +19,12 @@ class BoundService: Service( ) {
     fun performCalculation(numA: Int, numB: Int): Int{
         return numA + numB
     }
+
+    override fun onCreate() {
+        super.onCreate()
+    }
+
+    override fun onDestroy() {
+            super.onDestroy()
+    }
 }
